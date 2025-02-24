@@ -41,10 +41,8 @@ const without = function(source, itemsToRemove) {
 
 // Verifying through tests
 const words = ["hello", "world", "lighthouse"];
-const result1 = without([1, 2, 3], [1]);
-const result2 = without(["1", "2", "3"], [1, 2, "3"]);
-assertArraysEqual(result1, [2, 3]);
-assertArraysEqual(result2, ["1", "2"]);
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
 // Making sure original is unchanged
 without(words, ["lighthouse"])

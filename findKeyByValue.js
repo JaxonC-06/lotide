@@ -28,4 +28,4 @@ const myFavShowsByGenre = {
 assertEqual(findKeyByValue(myFavShowsByGenre, "Prison Break"), "action"); // This should pass.
 assertEqual(findKeyByValue(myFavShowsByGenre, "Arcane League of Legends"), undefined); // This should pass.
 assertEqual(findKeyByValue(myFavShowsByGenre, "Lost"), "drama"); //This should fail.
-assertEqual(findKeyByValue(myFavShowsByGenre, "This Is Us"), )
+assertEqual(findKeyByValue(myFavShowsByGenre, "This Is Us"), "drama") // This should pass.

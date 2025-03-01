@@ -13,8 +13,8 @@ const eqArrays = function(firstArr, secondArr) {
 
 const assertArraysEqual = function(firstArr, secondArr) {
   if (eqArrays(firstArr, secondArr)) {
-    console.log("The arrays are equal.")
+    console.log(`✅✅✅ The arrays are equal.`);
   } else {
-    console.log("The arrays are different.")
+    console.log(`❌❌❌ The arrays are different.`);
   }
 };

@@ -1,10 +1,17 @@
 const middle = require("../middle.js");
-const assertArraysEqual = require("../assertArraysEqual.js");
+const assert = require('chai').assert;
 
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // should log equal
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // should log equal
-
-assertArraysEqual(middle([1, 2]), []) // should log equal, since [1, 2] returns an empty array
-assertArraysEqual(middle([1, 2, 3]), [3]) // should log false
-
-console.log(middle([1, 2, 3, 4, 5, 6])); // should log [3, 4]
+describe("#middle", () => {
+  it("returns [3, 4] for [1, 2, 3, 4, 5, 6]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+  });
+  it("returns [3] for [1, 2, 3, 4, 5]", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]);
+  });
+  it("returns [] when given an array with only two elements", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
+  it("checks [3] is not equal to [1, 2, 3, 4]", () => {
+    assert.notDeepEqual(middle([1, 2, 3, 4]), [3]);
+  });
+});

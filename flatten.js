@@ -13,9 +13,9 @@ const eqArrays = function(firstArr, secondArr) {
 
 const assertArraysEqual = function(firstArr, secondArr) {
   if (eqArrays(firstArr, secondArr)) {
-    console.log("The arrays are equal.")
+    console.log("The arrays are equal.");
   } else {
-    console.log("The arrays are different.")
+    console.log("The arrays are different.");
   }
 };
 
@@ -27,7 +27,7 @@ const flatten = function(arr) {
       for (const j of i) {
         flatArr.push(j);
       }
-    } 
+    }
     if (!Array.isArray(i)) {
       flatArr.push(i);
     }
@@ -37,4 +37,4 @@ const flatten = function(arr) {
 };
 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [ 1, 2, 3, 4, 5, 6 ])
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [ 1, 2, 3, 4, 5, 6 ]);

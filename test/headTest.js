@@ -13,5 +13,5 @@ describe("#head", () => {
   });
   it("2 and [1, 2, 3, 4] are not equal", () => {
     assert.notEqual(head([1, 2, 3, 4]), 2);
-  })
+  });
 });

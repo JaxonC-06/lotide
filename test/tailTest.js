@@ -12,5 +12,5 @@ describe("#tail", () => {
     const arr = [1, 2, 3, 4];
     tail(arr);
     assert.lengthOf(arr, 4);
-  })
+  });
 });

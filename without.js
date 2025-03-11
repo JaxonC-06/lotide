@@ -13,9 +13,9 @@ const eqArrays = function(firstArr, secondArr) {
 
 const assertArraysEqual = function(firstArr, secondArr) {
   if (eqArrays(firstArr, secondArr)) {
-    console.log("The arrays are equal.")
+    console.log("The arrays are equal.");
   } else {
-    console.log("The arrays are different.")
+    console.log("The arrays are different.");
   }
 };
 
@@ -45,6 +45,6 @@ assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
 // Making sure original is unchanged
-without(words, ["lighthouse"])
+without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 

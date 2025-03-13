@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@jaxonc_06/lotide",
   "version": "1.0.0",
   "description": "Lotide Library",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/JaxonC-06/lotide.git"
   },
-  "author": "JaxonC-06",
+  "author": {
+    "name": "Jaxon Costain",
+    "email": "jaxoncostain@outlook.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JaxonC-06/lotide/issues"

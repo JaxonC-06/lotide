@@ -3,7 +3,10 @@ const countLetters = require("./countLetters.js");
 const countOnly = require("./countOnly.js")
 const eqArrays = require("./eqArrays.js");
 const findKey = require("./findKey.js");
+const findKeyByValue = require("./findKeyByValue.js");
+const flatten = require("./flatten.js");
 const head = require("./head.js");
+const letterPositions = require("./letterPositions.js");
 const map = require("./map.js");
 const middle = require("./middle.js");
 const tail = require("./tail.js");
@@ -16,7 +19,10 @@ module.exports = {
   countOnly: countOnly,
   eqArrays: eqArrays,
   findKey: findKey,
+  findKeyByValue: findKeyByValue,
+  flatten: flatten,
   head: head,
+  letterPositions: letterPositions,
   map: map,
   middle: middle,
   tail: tail,
